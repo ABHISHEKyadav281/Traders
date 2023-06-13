@@ -48,6 +48,7 @@ background-color: #030203;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(9, 9, 9);
 }
 
 .cennav {
@@ -59,11 +60,27 @@ background-color: #030203;
 
 .nav p {
     font-size: .9vw;
+    padding: 4px;
 }
+.nav h4 {
+    font-size: 1.1vw;
+    padding: 4px;
+    cursor: pointer;
+}
+.nav p:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow:inset 8px 2px 14px rgb(0,123,175);
+}
+
 
 .nav button {
     height: 4.5vh;
     margin-top: -1vw;
+    cursor: pointer;
 }
 
 /* button effect */
@@ -142,7 +159,7 @@ button:hover .kala {
 
 .page1 h5 {
     position: absolute;
-    z-index: 7;
+    z-index: 6;
     font-size: 1.45vw;
     left: 50%;
     top: 78%;
@@ -658,6 +675,17 @@ button:hover .kala {
     justify-content: space-evenly;
     align-items: center;
 }
+.fl p{
+    padding:4px;
+    color:white;
+    cursor: pointer;
+}
+.fl p:hover{
+    background-color: #fff;
+    color:black;
+    margin-top: -20px;
+    border-radius: 30px;
+}
 
 .fr {
     width: 30%;
@@ -665,16 +693,17 @@ button:hover .kala {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 }
 
 /* =============== */
 /* animation  */
 /* ============= */
 .motion{
-    transform-origin: left;
+    transform-origin: center;
 }
 .motion2{
-    transform-origin: left;
+    transform-origin: center;
 }
 .motion3{
     transform-origin: left;

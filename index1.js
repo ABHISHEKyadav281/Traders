@@ -2795,11 +2795,23 @@ box5();
 
 gsap.from(".motion",{
     opacity:0,
-    rotate:5,
+    y:90,
     scale:0,
-    y:12,
-    delay:3.5,
-    duration:1,
+    delay:3.1,
+    duration:1.3,
+    ease:"expo.out", 
+     scrollTrigger:{
+        scroller:"#main",
+        trigger:".motion",
+        start:"top 70%",
+    }
+})
+gsap.from(".motion2",{
+    opacity:0,
+    y:90,
+    scale:0,
+    delay:3.2,
+    duration:.8,
     scrollTrigger:{
         scroller:"#main",
         trigger:".motion",
